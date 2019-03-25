@@ -70,8 +70,6 @@ public class BankAccount {
             System.out.println(amount + " Has been deposited.");
             System.out.println("your new balance is : " + balance);
 
-            //return amount;
-
 
     }
 
@@ -92,7 +90,7 @@ public class BankAccount {
             System.out.println(amount + " Has been withdrawn.");
 
         }
-        //return amount;
+
 
     }
 
