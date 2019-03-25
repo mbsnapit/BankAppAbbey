@@ -44,7 +44,9 @@ public class BankAccount {
                     break;
 
                 case 3:
-                    withdraw(amount);
+                    //withdraw(amount);
+                    withdraw(balance);
+                    break;
 
                 case 4:
                     System.out.println("exit menu.");
@@ -58,7 +60,6 @@ public class BankAccount {
     }
 
     public void deposit(int amount) {
-
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("How much would you like to deposit?");
@@ -84,10 +85,13 @@ public class BankAccount {
             System.out.println("your don't have enough money.");
         } else {
 
-            amount = balance - amount;
-            balance = balance - amount;
+            balance = amount - amount;
+            //balance = balance - amount;
+            balance = amount;
 
-            System.out.println(amount + " Has been withdrawn.");
+
+
+            System.out.println( amount + " Has been withdrawn.");
 
         }
 
