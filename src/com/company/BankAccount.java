@@ -22,7 +22,7 @@ public class BankAccount {
 
             System.out.println("Press 3 to withdraw funds.");
 
-            System.out.println("Press 4 to exit menu. ");
+            System.out.println("Press 4 to exit application ");
 
             System.out.println();
 
@@ -44,15 +44,12 @@ public class BankAccount {
                     break;
 
                 case 3:
-                    //withdraw(amount);
                     withdraw(balance);
                     break;
 
                 case 4:
-                    System.out.println("exit menu.");
+                    System.out.println("Thank you for using this banking application!.");
                     break;
-
-
             }
 
         } while ((Integer.parseInt(userChoice)) != 4);
@@ -65,13 +62,10 @@ public class BankAccount {
         System.out.println("How much would you like to deposit?");
         amount = Integer.parseInt(scanner.nextLine());
 
-
             balance += amount;
 
             System.out.println(amount + " Has been deposited.");
             System.out.println("your new balance is : " + balance);
-
-
     }
 
     public void withdraw(int amount) {
@@ -89,15 +83,10 @@ public class BankAccount {
             //balance = balance - amount;
             balance = amount;
 
-
-
             System.out.println( amount + " Has been withdrawn.");
 
         }
-
-
     }
-
 }
 
 
